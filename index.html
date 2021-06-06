@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>DIP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <style>
+        * {
+            font-family: "Arial,sans-serif";
+        }
+        .fps-num {
+            font-size: 50px;
+        }
+        .video {
+            display: none;
+        }
+        .operation {
+            margin: 20px;
+        }
+        button {
+            width: 150px;
+            height: 30px;
+            margin-top: 10px;
+            border: solid 1px #999;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .radio-text {
+            font-size: 13px;
+        }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">
+            You are using an <strong>outdated</strong> browser. Please
+            <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+            your experience.
+            </p>
+        <![endif]-->
+        <canvas class="canvas"></canvas>
+        <div class="operation">
+            <h2>帧率：<span class="fps-num">NaN</span> FPS</h2>
+        </div>
+        <video class="video"
+               muted="muted"
+               loop="true"
+               autoplay="true" src="./video.mp4" type="video/mp4"></video>
+    </body>
+    <script type="module" src="./index.js"></script>
+</html>
